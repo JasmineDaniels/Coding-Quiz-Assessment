@@ -5,11 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Coding Quiz</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>Coding Assessment</header>
-    
+    <!-- <header>Coding Assessment</header> -->
+
     <!-- Start Button -->
     <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Rules to Play</span>
+        </div>
+    
+        <div class="info_list">
+            <li class="info">You will have only <span>3 mins</span> to finish the quiz</li>
+            <li class="info">Once the timer Starts you cant Stop</li>
+            <li class="info">There are <span>10 Questions</span>Total</li>
+            <li class="info">Each question is worth 10pts</li>
+            <li class="info">Each question answered incorrectly: <span>-15 seconds is taken off the clock</span></li>
+            <li class="info">Each question answered incorrectly: <span>-10pts from your score</span></li>
+            <li class="info">When all questions are answered or the timer reaches 0: <span>The Game is Over</span></li>
+        </div>
+
+        <div class="buttons">
+            <button class="quit">Exit Game</button>
+            <button class="restart">Good Luck!</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span>What Does CSS standfor?</span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+
 </body>
 </html>
