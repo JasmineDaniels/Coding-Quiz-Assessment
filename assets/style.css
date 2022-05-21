@@ -10,7 +10,8 @@ body{
     background-color: aqua;
 }
 .start_btn,
-.info_box{
+.info_box,
+.quiz_box{
     position: absolute;
     top: 50%;
     left:50%;
@@ -96,4 +97,115 @@ body{
 .buttons button.quit:hover{
     color: white;
     background-color: blueviolet;
+}
+
+.quiz_box{
+    width: 550px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 1px rgb(0, 0, 0.1); 
+
+
+}
+
+.quiz_box header {
+    position: relative;
+    height: 70px;
+    padding: 0 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.quiz_box header .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz_box header .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    background-color: antiquewhite;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+.quiz_box header .timer .time_text {
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+
+.quiz_box header .timer .time_sec {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: black;
+    height: 30px;
+    width: 45px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    user-select: none;
+}
+
+.quiz_box section{
+    padding: 25px 30px 20px 30px;
+    background-color: white;
+}
+
+.quiz_box section .que_text{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.quiz_box section .option_list{
+    padding: 10px 0;
+    display: block;
+}
+
+section .option_list .option{
+    background-color: aliceblue;
+    border: 1px solid rgb(172, 214, 251);
+    border-radius: 5px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: grab;
+    transition: all 0.3s ease;
+}
+
+section .option_list .option:hover{
+    color: white;
+    background-color: blueviolet;
+    border-color: aqua;
+}
+
+.option_list .option:last-child{
+    margin-bottom: 0px; 
+}
+
+.quiz_box footer{
+    height: 60px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz_box footer .total_que{
+    
 }
