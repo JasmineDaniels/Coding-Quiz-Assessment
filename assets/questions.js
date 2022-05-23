@@ -47,7 +47,7 @@ var questions = [
     {
         numb: 5,
         question: "If I type 'touch script.js' in the Terminal, what will this do?",
-        answer: "creates new js file",
+        answer: "Creates new js file",
         options: [
             "Saves a javascript file",
             "Adds javascript file to Github",
