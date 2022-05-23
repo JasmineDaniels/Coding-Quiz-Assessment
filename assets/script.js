@@ -8,7 +8,7 @@ var option_list = document.querySelector(".option_list");
 var timeCount = quizBox.querySelector(".timer .time_sec")
 
 // var scoreResult = document.getElementsByClassName('scoreResult');
-// var latestScore = scoreResult.val().stringfy() + saveScore.val().stringify
+// var latestScore.localStorage = scoreResult.val().stringfy() + saveScore.val().stringify
 
 
 //2a. If Start Quiz Button is clicked, 
@@ -78,7 +78,7 @@ function optionSelected(answer){
 
 function startTimer(m,s){
     // counter = setInterval(timer, 1000);
-    var presentTime = timeCount.innerHTML = 05 + ":" + 00;
+    var presentTime = timeCount.innerHTML = 03 + ":" + 00;
     var timeArray = presentTime.split(/[:]+/);
     var m = timeArray[0];
     var s = checkSecond((timeArray[1]--));
