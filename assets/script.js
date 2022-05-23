@@ -3,7 +3,7 @@ var startBtn = document.querySelector('.start_btn button');
 var infoBox = document.querySelector('.info_box');
 var exitBtn = infoBox.querySelector('.buttons .quit');
 var continueBtn = infoBox.querySelector('.buttons .restart');
-var quizBox = infoBox.querySelector('.quiz_box');
+var quizBox = document.querySelector('.quiz_box');
 
 // var scoreResult = document.getElementsByClassName('scoreResult');
 // var latestScore = scoreResult.val().stringfy() + saveScore.val().stringify
@@ -22,8 +22,9 @@ exitBtn.onclick = ()=>{
 //If Continue Button is clicked,
 continueBtn.onclick = ()=>{
     infoBox.classList.remove("activeInfo"); 
-    quizBox.classList.remove("activeQuiz"); 
+    quizBox.classList.add("activeQuiz"); // show the quiz box
 }
+
 
 
 //If continue => Function Play Game() + Loop 
